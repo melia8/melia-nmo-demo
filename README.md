@@ -14,6 +14,6 @@ For it to work you need to:
 
 2. Add your web-hook server URL and the number you want to converse with to the angular config-consts.ts file in the root of the angular apps folder
 
-3. Build the Angular app by issuing "ng build' from the ngNexmo folder. Once built, copy the contents of the dist folder to Boot app's main/resources/static
+3. Build the Angular app by issuing "ng build' from the ngNexmo folder, (*if building for the first time dont forget to issue a npm install to load the node modules specified in the package.json file*). Once built, copy the contents of the dist folder to Boot app's main/resources/static
 
 4. issue "./gradlew bootRun" from the nexmo-demo folder.
