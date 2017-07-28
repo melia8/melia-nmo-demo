@@ -1,0 +1,20 @@
+<h1>
+    {{title}}
+</h1>
+
+<input *ngIf="messages.length == 0" style="font-size: large; width: 40%" type="text" #boxTop
+       (keyup.enter)="onEnter(boxTop)">
+
+<md-chip-list class="mat-chip-list-stacked" *ngFor="let m of messages">
+    <div style="clear: both">
+        <md-chip [ngClass]="m.me == true ? 'chip-left' : 'chip-right'" color="{{m.me == true ? 'primary' : 'accent'}}"
+                 selected="true">
+            <span class="my-chip-text">{{m.message}}</span>
+        </md-chip>
+        <!--span [ngStyle]="{'color': m.me == true ? 'red' : 'blue'}">{{m.message}}</span-->
+        <p style="clear:both"></p>
+        <div *ngIf="m.id == messageId"><input style="font-size: large; width: 40%" type="text" #box
+                                              (keyup.enter)="onEnter(box)"></div>
+    </div>
+
+</md-chip-list>

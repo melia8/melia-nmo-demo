@@ -1,0 +1,16 @@
+
+.chip-right {
+    width: 40%;
+    float: right;
+    margin-bottom: 40px;
+}
+
+.chip-left {
+    width: 40%;
+    float: left;
+    margin-bottom: 40px;
+}
+
+.my-chip-text {
+    font-size: large;
+}
