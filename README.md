@@ -17,3 +17,5 @@ For it to work you need to:
 3. Build the Angular app by issuing "ng build' from the ngNexmo folder, (*if building for the first time dont forget to issue a npm install to load the node modules specified in the package.json file*). Once built, copy the contents of the dist folder to Boot app's main/resources/static
 
 4. issue "./gradlew bootRun" from the nexmo-demo folder.
+
+
